@@ -1,3 +1,4 @@
+import 'package:expense_tracker_app/view/login/welcome_view.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker_app/common/color_extension.dart';
 
@@ -18,14 +19,14 @@ class MyApp extends StatelessWidget {
         fontFamily: "Inter",
         colorScheme: ColorScheme.fromSeed(
           seedColor: TColor.primary,
-          background: TColor.gray80,
+          surface: TColor.gray80,
           primary: TColor.primary,
           primaryContainer: TColor.gray60,
           secondary: TColor.secondary,
         ),
         useMaterial3: false,
       ),
-      home: Container(),
+      home: const WelcomeView(),
     );
   }
 }
