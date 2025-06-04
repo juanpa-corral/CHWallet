@@ -139,7 +139,7 @@ class _SettingsViewState extends State<SettingsView> {
                     ),
                     child: Column(
                       children: [
-                        IconItemRow(
+                        const IconItemRow(
                           title: "Security",
                           icon: "assets/img/face_id.png",
                           value: "FaceID",
@@ -177,7 +177,7 @@ class _SettingsViewState extends State<SettingsView> {
                       color: TColor.gray60.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                         IconItemRow(
                           title: "Sorting",
@@ -220,7 +220,7 @@ class _SettingsViewState extends State<SettingsView> {
                       color: TColor.gray60.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                         IconItemRow(
                           title: "App icon",

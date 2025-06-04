@@ -176,11 +176,11 @@ class _SubscriptionInfoViewState extends State<SubscriptionInfoView> {
                     dashPattern: const [5, 10],
                     padding: EdgeInsets.zero,
                     strokeWidth: 1,
+                    radius: const Radius.circular(16),
+                    color: TColor.gray,
                     child: SizedBox(
                       height: 0,
                     ),
-                    radius: const Radius.circular(16),
-                    color: TColor.gray,
                   )),
                   Container(
                     width: 30,

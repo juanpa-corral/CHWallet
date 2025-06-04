@@ -1,4 +1,3 @@
-import 'package:expense_tracker_app/view/login/welcome_view.dart';
 import 'package:expense_tracker_app/view/main_tabview/main_tab_view.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker_app/common/color_extension.dart';
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Inter",
         colorScheme: ColorScheme.fromSeed(
           seedColor: TColor.primary,
-          surface: TColor.gray80,
+          background: TColor.gray80,
           primary: TColor.primary,
           primaryContainer: TColor.gray60,
           secondary: TColor.secondary,
