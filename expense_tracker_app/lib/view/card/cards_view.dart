@@ -1,11 +1,8 @@
-import 'dart:math';
-
-import 'package:calendar_agenda/calendar_agenda.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:trackizer/common/color_extension.dart';
-import 'package:trackizer/view/settings/settings_view.dart';
+import 'package:expense_tracker_app/common/color_extension.dart';
+import 'package:expense_tracker_app/view/settings/settings_view.dart';
 
 class CardsView extends StatefulWidget {
   const CardsView({super.key});
@@ -67,7 +64,6 @@ class _CardsViewState extends State<CardsView> {
         ]),
       fade: 1.0,
       onIndexChanged: (index) {
-        print(index);
       },
       scale: 0.8,
       itemWidth: 232.0,
@@ -148,14 +144,14 @@ class _CardsViewState extends State<CardsView> {
 
   @override
   Widget build(BuildContext context) {
-    var media = MediaQuery.sizeOf(context);
+    MediaQuery.sizeOf(context);
     return Scaffold(
       backgroundColor: TColor.gray,
       body: SingleChildScrollView(
         child: Stack(
           alignment: Alignment.topCenter,
           children: [
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 600,
               child: buildSwiper(),
@@ -178,7 +174,7 @@ class _CardsViewState extends State<CardsView> {
                       ),
                       Row(
                         children: [
-                          Spacer(),
+                          const Spacer(),
                           IconButton(
                               onPressed: () {
                                 Navigator.push(

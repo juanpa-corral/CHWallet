@@ -25,6 +25,7 @@ class ColorPainter extends CustomPainter {
     final position = info.position;
     if (info.forward!) {
       if (index < colors.length - 1) {
+        // ignore: deprecated_member_use
         color = colors[index + 1].value & 0x00ffffff;
         opacity = (position! <= 0
             ? (-position / info.viewportFraction!)
@@ -43,6 +44,7 @@ class ColorPainter extends CustomPainter {
       }
     } else {
       if (index > 0) {
+        // ignore: deprecated_member_use
         color = colors[index - 1].value & 0x00ffffff;
         opacity = (position! > 0
             ? position / info.viewportFraction!

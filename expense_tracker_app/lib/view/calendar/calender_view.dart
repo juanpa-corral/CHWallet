@@ -19,7 +19,7 @@ class _CalenderViewState extends State<CalenderView> {
       CalendarAgendaController();
   late DateTime selectedDateNotAppBBar;
 
-  Random random = new Random();
+  Random random = Random();
 
   List subArr = [
     {"name": "Spotify", "icon": "assets/img/spotify_logo.png", "price": "5.99"},
@@ -44,7 +44,7 @@ class _CalenderViewState extends State<CalenderView> {
 
   @override
   Widget build(BuildContext context) {
-    var media = MediaQuery.sizeOf(context);
+    MediaQuery.sizeOf(context);
     return Scaffold(
       backgroundColor: TColor.gray,
       body: SingleChildScrollView(
@@ -81,7 +81,7 @@ class _CalenderViewState extends State<CalenderView> {
 
                               Row(
                                 children: [
-                                  Spacer(),
+                                  const Spacer(),
                                   IconButton(
                                       onPressed: () {
                                         Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsView() ) );

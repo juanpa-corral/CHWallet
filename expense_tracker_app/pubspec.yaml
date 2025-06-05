@@ -39,7 +39,7 @@ dependencies:
   intl: ^0.18.0
   calendar_agenda:
     path: dev_lib/calendar_agenda
-  carousel_slider: ^4.2.1
+  carousel_slider: ^5.0.0
   card_swiper:
     path: dev_lib/card_swiper
 
